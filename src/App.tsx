@@ -33,14 +33,16 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.3 }}
-              className="px-6 flex flex-col gap-6 mt-2"
+              className="flex flex-col min-h-full"
             >
               <Header />
-              <BalanceHeader />
-              <SpendingForecast />
-              <SubscriptionWidgets />
-              <ExpensesBreakdown />
-              <TransactionsList />
+              <div className="flex flex-col gap-6 px-6 pt-6 pb-32">
+                <BalanceHeader />
+                <SpendingForecast />
+                <SubscriptionWidgets />
+                <ExpensesBreakdown />
+                <TransactionsList />
+              </div>
             </motion.div>
           )}
 

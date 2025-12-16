@@ -2,10 +2,14 @@ import logo from '../../../assets/logo.svg';
 
 export function Header() {
     return (
-        <header className="w-full px-6 pt-6 pb-0 flex items-center">
-            {/* Branding - Glass Effect */}
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-white/10 to-transparent border border-white/5 flex items-center justify-center">
-                <img src={logo} alt="Magie Logo" className="w-10 h-auto" />
+        <header className="w-full flex items-center justify-start px-8 pt-6 pb-2 bg-transparent z-50">
+            {/* Liquid Glass Logo Wrapper */}
+            <div className="rounded-[20px] p-2.5 flex items-center justify-center backdrop-blur-[20px] bg-white/[0.03] bg-gradient-to-br from-white/[0.08] to-transparent border border-white/[0.08] shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.2),_0px_12px_24px_-8px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <img
+                    src={logo}
+                    alt="Magie"
+                    className="h-11 w-auto object-contain"
+                />
             </div>
         </header>
     );
