@@ -1,0 +1,21 @@
+/* Importando a fonte Figtree do Google */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Carregando as ferramentas do Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definindo os estilos base do app */
+@layer base {
+  body {
+    /*
+      Aqui aplicamos as classes globais:
+      bg-background: Cor de fundo #171717
+      text-primary: Cor do texto #FFFFFF
+      font-sans: Fonte Figtree (configurada no tailwind.config.js)
+      antialiased: Deixa a fonte mais nítida no Mac
+    */
+    @apply bg-background text-primary font-sans antialiased;
+  }
+}
